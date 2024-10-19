@@ -1,0 +1,14 @@
+com\franchises\franchises_crud\controllers\BranchController.class
+com\franchises\franchises_crud\controllers\ProductController.class
+com\franchises\franchises_crud\modules\BranchModel.class
+com\franchises\franchises_crud\repositories\IFranchiseRepository.class
+com\franchises\franchises_crud\FranchisesCrudApplication.class
+com\franchises\franchises_crud\services\FranchiseService.class
+com\franchises\franchises_crud\services\ProductService.class
+com\franchises\franchises_crud\repositories\IProductRepository.class
+com\franchises\franchises_crud\repositories\IBranchRepository.class
+com\franchises\franchises_crud\utils\ApiResponse.class
+com\franchises\franchises_crud\modules\ProductModel.class
+com\franchises\franchises_crud\controllers\FranchiseController.class
+com\franchises\franchises_crud\modules\FranchiseModel.class
+com\franchises\franchises_crud\services\BranchService.class

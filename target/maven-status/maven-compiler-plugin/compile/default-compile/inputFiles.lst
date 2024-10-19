@@ -1,0 +1,14 @@
+D:\Proyectos\franchises-crud\src\main\java\com\franchises\franchises_crud\controllers\BranchController.java
+D:\Proyectos\franchises-crud\src\main\java\com\franchises\franchises_crud\controllers\FranchiseController.java
+D:\Proyectos\franchises-crud\src\main\java\com\franchises\franchises_crud\controllers\ProductController.java
+D:\Proyectos\franchises-crud\src\main\java\com\franchises\franchises_crud\FranchisesCrudApplication.java
+D:\Proyectos\franchises-crud\src\main\java\com\franchises\franchises_crud\modules\BranchModel.java
+D:\Proyectos\franchises-crud\src\main\java\com\franchises\franchises_crud\modules\FranchiseModel.java
+D:\Proyectos\franchises-crud\src\main\java\com\franchises\franchises_crud\modules\ProductModel.java
+D:\Proyectos\franchises-crud\src\main\java\com\franchises\franchises_crud\repositories\IBranchRepository.java
+D:\Proyectos\franchises-crud\src\main\java\com\franchises\franchises_crud\repositories\IFranchiseRepository.java
+D:\Proyectos\franchises-crud\src\main\java\com\franchises\franchises_crud\repositories\IProductRepository.java
+D:\Proyectos\franchises-crud\src\main\java\com\franchises\franchises_crud\services\BranchService.java
+D:\Proyectos\franchises-crud\src\main\java\com\franchises\franchises_crud\services\FranchiseService.java
+D:\Proyectos\franchises-crud\src\main\java\com\franchises\franchises_crud\services\ProductService.java
+D:\Proyectos\franchises-crud\src\main\java\com\franchises\franchises_crud\utils\ApiResponse.java
