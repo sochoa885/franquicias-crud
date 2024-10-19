@@ -52,4 +52,16 @@ public class ProductService {
         product.setName(name);
         return () -> productRepository.save(product);
     }
+
+    public List<ProductModel> getBestStock(Long franchiseId) {
+        return productRepository.findAll().stream()
+                .filter(product -> Objects.equals(product.getBranch().getFranchise().getId(), franchiseId))
+                .collect(Collectors.groupingBy(ProductModel::getBranch))
+                .values().stream()
+                .map(productModels -> productModels.stream()
+                        .max((p1, p2) -> Integer.compare(p1.getStock(), p2.getStock()))
+                        .orElse(null))
+                .filter(Objects::nonNull)
+                .collect(Collectors.toList());
+    }
 }

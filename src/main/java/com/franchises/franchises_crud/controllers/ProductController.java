@@ -63,4 +63,10 @@ public class ProductController {
             return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
         }
     }
+
+    @GetMapping("get-best-stock/{franchiseId}")
+    public ResponseEntity<ApiResponse<List<ProductModel>>> getBestStock(@PathVariable Long franchiseId) {
+        ApiResponse<List<ProductModel>> response = new ApiResponse<>(true, "Products with the most stock per branch", productService.getBestStock(franchiseId));
+        return new ResponseEntity<>(response, HttpStatus.OK);
+    }
 }
