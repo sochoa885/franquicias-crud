@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.franchises</groupId>
 	<artifactId>franchises-crud</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>franchises-crud</name>
 	<description>API Rest - Franchises</description>
 	<url/>
