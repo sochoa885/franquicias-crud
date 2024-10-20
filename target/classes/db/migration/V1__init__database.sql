@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS branches (
     id_franchise int NOT NULL,
     name varchar(255) NOT NULL,
     PRIMARY KEY (id),
-    FOREIGN KEY (id_franchise) REFERENCES Franchises(id)
+    FOREIGN KEY (id_franchise) REFERENCES franchises(id)
 );
 
 CREATE TABLE IF NOT EXISTS products (
@@ -18,5 +18,5 @@ CREATE TABLE IF NOT EXISTS products (
     name varchar(255) NOT NULL,
     stock int NOT NULL,
     PRIMARY KEY (id),
-    FOREIGN KEY (id_branch) REFERENCES Branches(id)
+    FOREIGN KEY (id_branch) REFERENCES branches(id)
 );
