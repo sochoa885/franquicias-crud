@@ -7,7 +7,7 @@ import jakarta.persistence.*;
 import java.util.List;
 
 @Entity
-@Table(name = "Branches")
+@Table(name = "branches")
 public class BranchModel {
 
     @Id

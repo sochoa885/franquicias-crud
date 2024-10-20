@@ -1,10 +1,10 @@
-CREATE TABLE IF NOT EXISTS Franchises (
+CREATE TABLE IF NOT EXISTS franchises (
     id int NOT NULL AUTO_INCREMENT,
     name varchar(255) NOT NULL,
     PRIMARY KEY (id)
 );
 
-CREATE TABLE IF NOT EXISTS Branches (
+CREATE TABLE IF NOT EXISTS branches (
     id int NOT NULL AUTO_INCREMENT,
     id_franchise int NOT NULL,
     name varchar(255) NOT NULL,
@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS Branches (
     FOREIGN KEY (id_franchise) REFERENCES Franchises(id)
 );
 
-CREATE TABLE IF NOT EXISTS Products (
+CREATE TABLE IF NOT EXISTS products (
     id int NOT NULL AUTO_INCREMENT,
     id_branch int NOT NULL,
     name varchar(255) NOT NULL,
