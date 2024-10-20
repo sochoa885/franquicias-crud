@@ -61,8 +61,10 @@ resource "aws_instance" "franchises-crud" {
               #!/bin/bash
               sudo apt update -y
               sudo apt install -y git docker.io docker-compose mysql-client-core-8.0 vim
-              git clone https://github.com/sochoa885/franquicias-crud.git
-              mysql --host=${aws_db_instance.franchises-crud-bd.address} --user=${var.db_user} --${var.db_password} > ./franquicias-crud/init.sql
+              mkdir -p /home/ubuntu/repository
+              git clone https://github.com/sochoa885/franquicias-crud.git /home/ubuntu/repository
+              sudo chown -R ubuntu:ubuntu /home/ubuntu/repository
+              mysql --host=${aws_db_instance.franchises-crud-bd.address} --user=${var.db_user} --${var.db_password} > /home/ubuntu/repository/franquicias-crud/init.sql
               EOF
   vpc_security_group_ids = [aws_security_group.franchises-crud-vpc.id]
   depends_on             = [aws_db_instance.franchises-crud-bd]
